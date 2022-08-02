@@ -37,8 +37,8 @@ const ContentLayout = styled.div`
   grid-gap: 1em;
 
   @media screen and (max-width: 800px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    //grid-template-columns: 1fr;
+    //grid-template-rows: 1fr 1fr;
   }
 `
 
