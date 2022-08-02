@@ -47,12 +47,12 @@ export function colors(darkMode: boolean): Colors {
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
 
     // backgrounds / greys
-    bg0: darkMode ? '#191B1F' : '#F7F8FA',
-    bg1: darkMode ? '#1F2128' : '#FFFFFF',
-    bg2: darkMode ? '#2C2F36' : '#F7F8FA',
-    bg3: darkMode ? '#40444F' : '#EDEEF2',
-    bg4: darkMode ? '#565A69' : '#CED0D9',
-    bg5: darkMode ? '#6C7284' : '#888D9B',
+    bg0: darkMode ? 'rgba(32, 125, 255, 0.2)' : 'rgba(32, 125, 255, 0.8)',
+    bg1: darkMode ? 'rgba(32, 125, 255, 0.2)' : 'rgba(32, 125, 255, 0.8)',
+    bg2: darkMode ? 'rgba(32, 125, 255, 0.5)' : 'rgba(32, 125, 255, 0.5)',
+    bg3: darkMode ? 'rgba(32, 125, 255, 0.5)' : 'rgba(32, 125, 255, 0.5)',
+    bg4: darkMode ? 'rgba(32, 125, 255, 0.8)' : 'rgba(32, 125, 255, 0.2)',
+    bg5: darkMode ? 'rgba(32, 125, 255, 0.8)' : 'rgba(32, 125, 255, 0.2)',
 
     //specialty colors
     modalBG: darkMode ? 'rgba(0,0,0,.425)' : 'rgba(0,0,0,0.3)',
@@ -225,7 +225,7 @@ html {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
-  background-color: ${({ theme }) => theme.bg1};
+  background-color: ${({ theme }) => 'transparent'};
 }
 
 .three-line-legend-dark {

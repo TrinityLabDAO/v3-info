@@ -33,7 +33,7 @@ import { GenericImageWrapper } from 'components/Logo'
 
 const ContentLayout = styled.div`
   display: grid;
-  grid-template-columns: 300px 1fr;
+  //grid-template-columns: 300px 1fr;
   grid-gap: 1em;
 
   @media screen and (max-width: 800px) {
@@ -229,49 +229,49 @@ export default function PoolPage({
           {/*  )}*/}
           {/*</ResponsiveRow>*/}
           <ContentLayout>
-            <DarkGreyCard>
-              <AutoColumn gap="lg">
-                <GreyCard padding="16px">
-                  <AutoColumn gap="md">
-                    <TYPE.main>Total Tokens Locked</TYPE.main>
-                    <RowBetween>
-                      <RowFixed>
-                        <CurrencyLogo address={poolData.token0.address} size={'20px'} />
-                        <TYPE.label fontSize="14px" ml="8px">
-                          {poolData.token0.symbol}
-                        </TYPE.label>
-                      </RowFixed>
-                      <TYPE.label fontSize="14px">{formatAmount(poolData.tvlToken0)}</TYPE.label>
-                    </RowBetween>
-                    <RowBetween>
-                      <RowFixed>
-                        <CurrencyLogo address={poolData.token1.address} size={'20px'} />
-                        <TYPE.label fontSize="14px" ml="8px">
-                          {poolData.token1.symbol}
-                        </TYPE.label>
-                      </RowFixed>
-                      <TYPE.label fontSize="14px">{formatAmount(poolData.tvlToken1)}</TYPE.label>
-                    </RowBetween>
-                  </AutoColumn>
-                </GreyCard>
-                <AutoColumn gap="4px">
-                  <TYPE.main fontWeight={400}>TVL</TYPE.main>
-                  <TYPE.label fontSize="24px">{formatDollarAmount(poolData.tvlUSD)}</TYPE.label>
-                  <Percent value={poolData.tvlUSDChange} />
-                </AutoColumn>
-                <AutoColumn gap="4px">
-                  <TYPE.main fontWeight={400}>Volume 24h</TYPE.main>
-                  <TYPE.label fontSize="24px">{formatDollarAmount(poolData.volumeUSD)}</TYPE.label>
-                  <Percent value={poolData.volumeUSDChange} />
-                </AutoColumn>
-                <AutoColumn gap="4px">
-                  <TYPE.main fontWeight={400}>24h Fees</TYPE.main>
-                  <TYPE.label fontSize="24px">
-                    {formatDollarAmount(poolData.volumeUSD * (poolData.feeTier / 1000000))}
-                  </TYPE.label>
-                </AutoColumn>
-              </AutoColumn>
-            </DarkGreyCard>
+            {/*<DarkGreyCard>*/}
+            {/*  <AutoColumn gap="lg">*/}
+            {/*    <GreyCard padding="16px">*/}
+            {/*      <AutoColumn gap="md">*/}
+            {/*        <TYPE.main>Total Tokens Locked</TYPE.main>*/}
+            {/*        <RowBetween>*/}
+            {/*          <RowFixed>*/}
+            {/*            <CurrencyLogo address={poolData.token0.address} size={'20px'} />*/}
+            {/*            <TYPE.label fontSize="14px" ml="8px">*/}
+            {/*              {poolData.token0.symbol}*/}
+            {/*            </TYPE.label>*/}
+            {/*          </RowFixed>*/}
+            {/*          <TYPE.label fontSize="14px">{formatAmount(poolData.tvlToken0)}</TYPE.label>*/}
+            {/*        </RowBetween>*/}
+            {/*        <RowBetween>*/}
+            {/*          <RowFixed>*/}
+            {/*            <CurrencyLogo address={poolData.token1.address} size={'20px'} />*/}
+            {/*            <TYPE.label fontSize="14px" ml="8px">*/}
+            {/*              {poolData.token1.symbol}*/}
+            {/*            </TYPE.label>*/}
+            {/*          </RowFixed>*/}
+            {/*          <TYPE.label fontSize="14px">{formatAmount(poolData.tvlToken1)}</TYPE.label>*/}
+            {/*        </RowBetween>*/}
+            {/*      </AutoColumn>*/}
+            {/*    </GreyCard>*/}
+            {/*    <AutoColumn gap="4px">*/}
+            {/*      <TYPE.main fontWeight={400}>TVL</TYPE.main>*/}
+            {/*      <TYPE.label fontSize="24px">{formatDollarAmount(poolData.tvlUSD)}</TYPE.label>*/}
+            {/*      <Percent value={poolData.tvlUSDChange} />*/}
+            {/*    </AutoColumn>*/}
+            {/*    <AutoColumn gap="4px">*/}
+            {/*      <TYPE.main fontWeight={400}>Volume 24h</TYPE.main>*/}
+            {/*      <TYPE.label fontSize="24px">{formatDollarAmount(poolData.volumeUSD)}</TYPE.label>*/}
+            {/*      <Percent value={poolData.volumeUSDChange} />*/}
+            {/*    </AutoColumn>*/}
+            {/*    <AutoColumn gap="4px">*/}
+            {/*      <TYPE.main fontWeight={400}>24h Fees</TYPE.main>*/}
+            {/*      <TYPE.label fontSize="24px">*/}
+            {/*        {formatDollarAmount(poolData.volumeUSD * (poolData.feeTier / 1000000))}*/}
+            {/*      </TYPE.label>*/}
+            {/*    </AutoColumn>*/}
+            {/*  </AutoColumn>*/}
+            {/*</DarkGreyCard>*/}
             <DarkGreyCard>
               <ToggleRow align="flex-start">
                 <AutoColumn>
