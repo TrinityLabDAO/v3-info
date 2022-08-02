@@ -37,9 +37,10 @@ const HeaderWrapper = styled.div`
 const BodyWrapper = styled.div<{ warningActive?: boolean }>`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
-  padding-top: 40px;
-  margin-top: ${({ warningActive }) => (warningActive ? '140px' : '100px')};
+  //padding-top: 40px;
+  // margin-top: ${({ warningActive }) => (warningActive ? '140px' : '100px')};
   align-items: center;
   flex: 1;
   overflow-y: auto;
@@ -51,13 +52,13 @@ const BodyWrapper = styled.div<{ warningActive?: boolean }>`
   }
 
   @media (max-width: 1080px) {
-    padding-top: 2rem;
-    margin-top: 140px;
+    //padding-top: 2rem;
+    //margin-top: 140px;
   }
 `
 
 const Marginer = styled.div`
-  margin-top: 5rem;
+  //margin-top: 5rem;
 `
 
 const Hide1080 = styled.div`
@@ -117,50 +118,50 @@ export default function App() {
 
   return (
     <Suspense fallback={null}>
-      <Route component={GoogleAnalyticsReporter} />
-      <Route component={DarkModeQueryParamReader} />
+      {/*<Route component={GoogleAnalyticsReporter} />*/}
+      {/*<Route component={DarkModeQueryParamReader} />*/}
       {loading ? (
         <LocalLoader fill={true} />
       ) : (
         <AppWrapper>
-          <URLWarning />
-          <HeaderWrapper>
-            {showNotSyncedWarning && (
-              <WarningWrapper>
-                <WarningBanner>
-                  {`Warning: 
-                  Data has only synced to  block ${subgraphStatus.syncedBlock} (out of ${subgraphStatus.headBlock}). Please check back soon.`}
-                </WarningBanner>
-              </WarningWrapper>
-            )}
-            <Hide1080>
-              <TopBar />
-            </Hide1080>
-            <Header />
-          </HeaderWrapper>
+          {/*<URLWarning />*/}
+          {/*<HeaderWrapper>*/}
+          {/*  {showNotSyncedWarning && (*/}
+          {/*    <WarningWrapper>*/}
+          {/*      <WarningBanner>*/}
+          {/*        {`Warning: */}
+          {/*        Data has only synced to  block ${subgraphStatus.syncedBlock} (out of ${subgraphStatus.headBlock}). Please check back soon.`}*/}
+          {/*      </WarningBanner>*/}
+          {/*    </WarningWrapper>*/}
+          {/*  )}*/}
+          {/*  <Hide1080>*/}
+          {/*    <TopBar />*/}
+          {/*  </Hide1080>*/}
+          {/*  <Header />*/}
+          {/*</HeaderWrapper>*/}
           {subgraphStatus.available === false ? (
             <AppWrapper>
-              <BodyWrapper>
-                <DarkGreyCard style={{ maxWidth: '340px' }}>
-                  <TYPE.label>
-                    The Graph hosted network which provides data for this site is temporarily experiencing issues. Check
-                    current status{' '}
-                    <ExternalLink href="https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3">
-                      here.
-                    </ExternalLink>
-                  </TYPE.label>
-                </DarkGreyCard>
-              </BodyWrapper>
+              {/*<BodyWrapper>*/}
+              {/*  <DarkGreyCard style={{ maxWidth: '340px' }}>*/}
+              {/*    <TYPE.label>*/}
+              {/*      The Graph hosted network which provides data for this site is temporarily experiencing issues. Check*/}
+              {/*      current status{' '}*/}
+              {/*      <ExternalLink href="https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3">*/}
+              {/*        here.*/}
+              {/*      </ExternalLink>*/}
+              {/*    </TYPE.label>*/}
+              {/*  </DarkGreyCard>*/}
+              {/*</BodyWrapper>*/}
             </AppWrapper>
           ) : (
             <BodyWrapper warningActive={showNotSyncedWarning}>
               <Popups />
               <Switch>
                 <Route exact strict path="/:networkID?/pools/:address" component={PoolPage} />
-                <Route exact strict path="/:networkID?/pools" component={PoolsOverview} />
-                <Route exact strict path="/:networkID?/tokens/:address" component={RedirectInvalidToken} />
-                <Route exact strict path="/:networkID?/tokens" component={TokensOverview} />
-                <Route exact path="/:networkID?" component={Home} />
+                {/*<Route exact strict path="/:networkID?/pools" component={PoolsOverview} />*/}
+                {/*<Route exact strict path="/:networkID?/tokens/:address" component={RedirectInvalidToken} />*/}
+                {/*<Route exact strict path="/:networkID?/tokens" component={TokensOverview} />*/}
+                {/*<Route exact path="/:networkID?" component={Home} />*/}
               </Switch>
               <Marginer />
             </BodyWrapper>
