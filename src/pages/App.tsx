@@ -48,7 +48,7 @@ const BodyWrapper = styled.div<{ warningActive?: boolean }>`
   z-index: 1;
 
   > * {
-    max-width: 1200px;
+    //max-width: 1200px;
   }
 
   @media (max-width: 1080px) {
