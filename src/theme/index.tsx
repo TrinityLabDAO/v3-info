@@ -47,12 +47,19 @@ export function colors(darkMode: boolean): Colors {
     text5: darkMode ? '#2C2F36' : '#EDEEF2',
 
     // backgrounds / greys
-    bg0: darkMode ? 'rgba(32, 125, 255, 0.2)' : 'rgba(32, 125, 255, 0.8)',
+    bg0: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
     bg1: darkMode ? 'rgba(32, 125, 255, 0.2)' : 'rgba(32, 125, 255, 0.8)',
     bg2: darkMode ? 'rgba(32, 125, 255, 0.5)' : 'rgba(32, 125, 255, 0.5)',
     bg3: darkMode ? 'rgba(32, 125, 255, 0.5)' : 'rgba(32, 125, 255, 0.5)',
     bg4: darkMode ? 'rgba(32, 125, 255, 0.8)' : 'rgba(32, 125, 255, 0.2)',
     bg5: darkMode ? 'rgba(32, 125, 255, 0.8)' : 'rgba(32, 125, 255, 0.2)',
+    // bg0: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+    // bg1: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+    // bg2: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+    // bg3: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+    // bg4: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+    // bg5: darkMode ? 'rgba(32, 125, 255, 0.0)' : 'rgba(32, 125, 255, 0.0)',
+
 
     //specialty colors
     modalBG: darkMode ? 'rgba(0,0,0,.425)' : 'rgba(0,0,0,0.3)',
