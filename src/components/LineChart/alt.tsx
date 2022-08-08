@@ -58,10 +58,10 @@ const Chart = ({
 
   return (
     <Wrapper minHeight={minHeight} {...rest}>
-      <RowBetween>
-        {topLeft ?? null}
-        {topRight ?? null}
-      </RowBetween>
+      {/*<RowBetween>*/}
+      {/*  {topLeft ?? null}*/}
+      {/*  {topRight ?? null}*/}
+      {/*</RowBetween>*/}
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}
@@ -105,10 +105,10 @@ const Chart = ({
           <Area dataKey="value" type="monotone" stroke={color} fill="url(#gradient)" strokeWidth={2} />
         </AreaChart>
       </ResponsiveContainer>
-      <RowBetween>
-        {bottomLeft ?? null}
-        {bottomRight ?? null}
-      </RowBetween>
+      {/*<RowBetween>*/}
+      {/*  {bottomLeft ?? null}*/}
+      {/*  {bottomRight ?? null}*/}
+      {/*</RowBetween>*/}
     </Wrapper>
   )
 }
