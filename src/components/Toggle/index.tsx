@@ -58,7 +58,7 @@ export const ToggleWrapper = styled.button<{ width?: string }>`
   align-items: center;
   width: ${({ width }) => width ?? '100%'}
   padding: 1px;
-  background: ${({ theme }) => theme.bg2};
+  background: ${({ theme }) => 'rgba(85, 61, 144, 0.3)'};
   border: ${({ theme }) => '2px solid ' + 'transparent'};
   border-radius: 5px;
   cursor: pointer;
