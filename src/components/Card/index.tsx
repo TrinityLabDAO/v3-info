@@ -4,7 +4,9 @@ import { Box } from 'rebass/styled-components'
 const Card = styled(Box)<{ width?: string; padding?: string; border?: string; borderRadius?: string }>`
   width: ${({ width }) => width ?? '100%'};
   border-radius: 5px;
-  padding: 1rem;
+  padding: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding: ${({ padding }) => padding};
   border: ${({ border }) => border};
   border-radius: ${({ borderRadius }) => borderRadius};
