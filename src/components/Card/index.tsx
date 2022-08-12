@@ -25,7 +25,7 @@ export const GreyCard = styled(Card)`
 `
 
 export const DarkGreyCard = styled(Card)`
-  background-color: ${({ theme }) => 'rgba(85, 61, 144, 0.3)'};
+  background-color: ${({ theme }) => 'rgba(85, 61, 144, 0.0)'};
   min-height: 422px;
 `
 
